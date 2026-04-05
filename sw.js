@@ -1,5 +1,10 @@
-const CACHE = 'dfw-v2';
-const ASSETS = ['/', '/index.html', '/manifest.json', '/icon.svg'];
+const CACHE = 'dfw-v3';
+const ASSETS = [
+  '/AAVE-DEFI-WALLET/',
+  '/AAVE-DEFI-WALLET/index.html',
+  '/AAVE-DEFI-WALLET/manifest.json',
+  '/AAVE-DEFI-WALLET/icon.svg'
+];
 
 self.addEventListener('install', e => {
   e.waitUntil(
@@ -16,9 +21,8 @@ self.addEventListener('activate', e => {
 });
 
 self.addEventListener('fetch', e => {
-  // Network-first for Binance API, cache-first for everything else
   if (e.request.url.includes('binance.com')) {
-    e.respondWith(fetch(e.request).catch(() => new Response('{}', { headers: { 'Content-Type': 'application/json' } })));
+    e.respondWith(fetch(e.request).catch(() => new Response('[]', { headers: { 'Content-Type': 'application/json' } })));
     return;
   }
   e.respondWith(
