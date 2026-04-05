@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 192 192">
+  <!-- Background -->
+  <rect width="192" height="192" rx="42" fill="#1C1F22"/>
+  <!-- Fox ears -->
+  <polygon points="42,72 62,24 86,72" fill="#F6851B" opacity="0.9"/>
+  <polygon points="106,72 130,24 152,72" fill="#E2761B" opacity="0.9"/>
+  <!-- Inner ears -->
+  <polygon points="52,68 62,36 76,68" fill="#D7C1B3" opacity="0.7"/>
+  <polygon points="116,68 130,36 142,68" fill="#D7C1B3" opacity="0.7"/>
+  <!-- Wallet body -->
+  <rect x="28" y="68" width="136" height="90" rx="14" fill="none" stroke="#F6851B" stroke-width="7"/>
+  <!-- Divider -->
+  <rect x="28" y="98" width="136" height="6" fill="#F6851B"/>
+  <!-- Coin slot -->
+  <circle cx="148" cy="122" r="15" fill="#F6851B"/>
+  <text x="148" y="127" text-anchor="middle" fill="#1C1F22" font-size="13" font-weight="bold" font-family="sans-serif">$</text>
+  <!-- Card lines -->
+  <rect x="40" y="110" width="60" height="5" rx="2" fill="rgba(246,133,27,0.4)"/>
+  <rect x="40" y="122" width="40" height="5" rx="2" fill="rgba(246,133,27,0.25)"/>
+</svg>
